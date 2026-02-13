@@ -1,0 +1,64 @@
+# ==============================
+# Secrets & Credentials
+# ==============================
+credentials.json
+token.json
+.env
+.env.*
+
+# ==============================
+# Session / Login Data
+# ==============================
+whatsapp_session/
+
+# ==============================
+# Processed ID Trackers
+# ==============================
+processed_gmail_ids.txt
+processed_stripe_ids.txt
+
+# ==============================
+# Server Logs
+# ==============================
+email_server.log
+
+# ==============================
+# Node.js
+# ==============================
+node_modules/
+package-lock.json
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# ==============================
+# IDE / Editor
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==============================
+# OS
+# ==============================
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ==============================
+# Obsidian
+# ==============================
+.obsidian/
+.trash/

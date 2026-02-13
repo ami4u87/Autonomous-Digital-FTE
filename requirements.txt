@@ -1,0 +1,18 @@
+# Autonomous Digital FTE (AI Employee)
+# Python 3.13+
+#
+# Install:  pip install -r requirements.txt
+
+# --- Core: Task Processor (Orchestrator) ---
+watchdog>=4.0.0
+
+# --- Gmail Watcher ---
+google-auth>=2.29.0
+google-auth-oauthlib>=1.2.0
+google-api-python-client>=2.130.0
+
+# --- WhatsApp Watcher ---
+playwright>=1.44.0
+
+# --- Stripe Watcher ---
+stripe>=9.0.0
