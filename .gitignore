@@ -62,3 +62,28 @@ Desktop.ini
 # ==============================
 .obsidian/
 .trash/
+
+# ==============================
+# Claude Code
+# ==============================
+.claude/
+
+# ==============================
+# Vault runtime files (test artifacts, task output)
+# ==============================
+Needs_Action/*.md
+In_Progress/*.md
+Done/*.md
+Pending_Approval/*.md
+Approved/*.md
+Rejected/*.md
+Plans/*.md
+Logs/*.md
+Logs/*.log
+Logs/Error_*/
+Briefings/*.md
+Updates/*.md
+Accounting/*.md
+
+# Keep the folder structure via .gitkeep
+!**/.gitkeep
