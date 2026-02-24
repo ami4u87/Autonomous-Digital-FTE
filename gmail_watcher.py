@@ -101,14 +101,14 @@ class GmailWatcher(BaseWatcher):
     # ------------------------------------------------------------------
 
     def check_for_updates(self) -> list:
-        """Query Gmail for unread important messages not yet processed."""
-        self.logger.debug("Checking Gmail for unread important messages")
+        """Query Gmail for unread messages in the primary inbox."""
+        self.logger.debug("Checking Gmail for unread messages in primary inbox")
 
         try:
             results = (
                 self.service.users()
                 .messages()
-                .list(userId="me", q="is:unread is:important", maxResults=20)
+                .list(userId="me", q="is:unread category:primary", maxResults=20)
                 .execute()
             )
         except Exception:
