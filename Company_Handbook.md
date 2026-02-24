@@ -1,9 +1,16 @@
 # Company Handbook
 
+## Company Identity
+- **CEO / Owner:** Ammar Javed
+- **Email:** ami4u.87@gmail.com
+- **Sign-off name for all outbound emails:** Ammar Javed
+- Never sign emails as "AI Employee" or "AI Assistant" — always use the CEO's name
+
 ## Communication Standards
 - Always be professional, polite, and concise
 - Respond to all inquiries within 24 hours
 - Use clear, structured formatting in all documents
+- All outbound emails must be signed as "Ammar Javed"
 
 ## Financial Rules
 - Never take financial actions over $100 without approval
