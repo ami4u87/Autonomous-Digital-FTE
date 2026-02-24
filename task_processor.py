@@ -126,8 +126,11 @@ def invoke_claude(vault: Path, task_file: Path, dry_run: bool = False) -> bool:
         date=datetime.now().strftime("%Y%m%d"),
     )
 
+    # On Windows, npm installs CLI tools as .cmd scripts
+    claude_bin = "claude.cmd" if sys.platform == "win32" else "claude"
+
     command = [
-        "claude",
+        claude_bin,
         "-p", prompt,
         "--allowedTools", "Read,Write,Edit,Glob,Grep",
     ]
@@ -140,12 +143,17 @@ def invoke_claude(vault: Path, task_file: Path, dry_run: bool = False) -> bool:
         return True
 
     try:
+        # Unset CLAUDECODE env var to allow subprocess invocation
+        env = os.environ.copy()
+        env.pop("CLAUDECODE", None)
+
         result = subprocess.run(
             command,
             capture_output=True,
             text=True,
             timeout=300,
             cwd=str(vault),
+            env=env,
         )
 
         if result.stdout:
